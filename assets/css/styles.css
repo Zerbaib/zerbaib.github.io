@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  #hero {
+    margin: 30px;
+    margin-bottom: 0px;
+    width: auto;
+    height: auto;
+  }
+}
+
