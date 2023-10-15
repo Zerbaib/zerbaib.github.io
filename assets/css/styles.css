@@ -7,3 +7,9 @@
   }
 }
 
+.about-button {
+  padding: 10px;
+  border-radius: 50px;
+  background: rgb(75,85,192);
+  margin: 15px;
+}
