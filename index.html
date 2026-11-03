@@ -1,81 +1,404 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en" style="color: var(--bs-body-bg);">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>ZerbaibPortfolio</title>
-    <link rel="icon" type="image/png" sizes="3001x3001" href="assets/img/Z_no_bg.png?h=592823b2729cbab9dac2cadf0793368e">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/CleanFooter.css?h=dae2bcc8ca86b34212c18089bf8bbfe0">
-    <link rel="stylesheet" href="assets/css/styles.css?h=d1e6d38b80c6edeb63b25747a8a4f953">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerbaib · Portfolio</title>
+    <meta name="description" content="Zerbaib (Hugo) — Python developer, Discord bot expert, network & server enthusiast, DN42 AS operator.">
+    <link rel="icon" type="image/png" href="assets/img/Z_no_bg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Apply saved theme before paint to avoid a flash -->
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', t);
+            } catch (e) { }
+        })();
+    </script>
 </head>
 
-<body style="color: var(--bs-body-bg);background: rgb(34, 39, 46);">
-    <!-- Start: CleanHero -->
-    <div class="container py-4 py-xl-5" id="hero" style="background: rgb(39, 43, 54);border-radius: 50px;max-width: 750px;margin-top: 30px;height: auto;">
-        <!-- Start: CleanNavbar -->
-        <nav class="navbar navbar-expand-md bg-dark py-3 navbar-dark" style="background: rgb(28, 33, 40);border-radius: 50px;max-width: 750px;margin-bottom: 35px;">
-            <div class="container"><a href="index.html" style="color: inherit;text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="background: rgb(39, 43, 54);width: 25px;height: 25px;border-radius: 5px;padding: 2px;margin: 5px;">
-                        <path d="M10.7071 2.29289C10.3166 1.90237 9.68342 1.90237 9.29289 2.29289L2.29289 9.29289C1.90237 9.68342 1.90237 10.3166 2.29289 10.7071C2.68342 11.0976 3.31658 11.0976 3.70711 10.7071L4 10.4142V17C4 17.5523 4.44772 18 5 18H7C7.55228 18 8 17.5523 8 17V15C8 14.4477 8.44772 14 9 14H11C11.5523 14 12 14.4477 12 15V17C12 17.5523 12.4477 18 13 18H15C15.5523 18 16 17.5523 16 17V10.4142L16.2929 10.7071C16.6834 11.0976 17.3166 11.0976 17.7071 10.7071C18.0976 10.3166 18.0976 9.68342 17.7071 9.29289L10.7071 2.29289Z" fill="currentColor"></path>
-                    </svg></a><a href="fr/index.html" style="color: inherit;text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="background: rgb(39, 43, 54);width: 25px;height: 25px;border-radius: 5px;padding: 2px;margin: 5px;">
-
-                        <path d="M8 5C7.44772 5 7 5.44771 7 6C7 6.55228 7.44772 7 8 7L13.5858 7L12.2929 8.29289C11.9024 8.68342 11.9024 9.31658 12.2929 9.70711C12.6834 10.0976 13.3166 10.0976 13.7071 9.70711L16.7071 6.70711C16.8946 6.51957 17 6.26522 17 6C17 5.73478 16.8946 5.48043 16.7071 5.29289L13.7071 2.29289C13.3166 1.90237 12.6834 1.90237 12.2929 2.29289C11.9024 2.68342 11.9024 3.31658 12.2929 3.70711L13.5858 5L8 5Z" fill="currentColor"></path>
-                        <path d="M12 15C12.5523 15 13 14.5523 13 14C13 13.4477 12.5523 13 12 13L6.41421 13L7.70711 11.7071C8.09763 11.3166 8.09763 10.6834 7.70711 10.2929C7.31658 9.90237 6.68342 9.90237 6.29289 10.2929L3.29289 13.2929C3.10536 13.4804 3 13.7348 3 14C3 14.2652 3.10536 14.5196 3.29289 14.7071L6.29289 17.7071C6.68342 18.0976 7.31658 18.0976 7.70711 17.7071C8.09763 17.3166 8.09763 16.6834 7.70711 16.2929L6.41421 15L12 15Z" fill="currentColor"></path>
-                    </svg></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navcol-5">
-                    <ul class="navbar-nav ms-auto" style="color: rgb(255,255,255);">
-                        <li class="nav-item" style="width: auto;height: auto;text-align: center;border-radius: 5px;margin: auto;padding: 5px;"><a class="nav-link active" href="./about.html" style="background: rgb(39, 43, 54);border-radius: 15px;"><span style="margin: 2px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-fill" style="width: 20px;height: 17px;padding-bottom: 1px;">
-                                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
-                                    </svg><strong style="padding-left: 2px;">About me</strong></span></a></li>
-                        <li class="nav-item" style="width: auto;height: auto;text-align: center;border-radius: 5px;margin: auto;padding: 5px;"><a class="nav-link active" href="https://github.com/Zerbaib" style="background: rgb(39, 43, 54);border-radius: 15px;"><span style="margin: 2px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github" style="width: 20px;height: 17px;padding-bottom: 1px;">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-                                    </svg><strong style="padding-left: 2px;">My GitHub</strong></span></a></li>
-                        <li class="nav-item" style="width: auto;height: auto;text-align: center;border-radius: 5px;margin: auto;padding: 5px;"><a class="nav-link active" href="mailto:hugo.hennetin@proton.me" style="background: rgb(39, 43, 54);border-radius: 15px;"><span style="padding: 0px;margin: 2px;"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="width: 20px;height: 17px;padding-bottom: 1px;">
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
-                                    </svg><strong style="padding-left: 2px;">Contact me</strong></span></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav><!-- End: CleanNavbar -->
-        <div class="row" style="margin: 0px;margin-right: 15px;margin-left: 15px;">
-            <div class="col">
-                <div class="row" style="text-align: center;">
-                    <div class="col"><img src="assets/img/Z_no_bg.png?h=592823b2729cbab9dac2cadf0793368e" style="border-radius: 50px;width: 105px;height: 105px;border: 4px solid rgb(75,85,192);"></div>
-                </div>
-                <div class="row">
-                    <div class="col" style="margin-top: 5px;text-align: center;"><strong style="color: rgb(75,85,192);margin-top: 0px;">701805250524217394</strong></div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="row">
-                    <div class="col-md-7" style="width: 100%;padding-right: 0px;padding-left: 0px;">
-                        <h1 style="color: rgb(75,85,192);font-weight: bold;text-align: center;font-size: 40px;margin-bottom: 0px;">@zerbaib<img src="assets/img/verified.png?h=861210e1477e7acc4a6864e576d16d1c" style="width: 45px;height: 45px;margin: 0px;margin-bottom: 5px;padding-bottom: 0px;margin-left: 5px;"></h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12" style="text-align: center;"><em style="color: rgb(255,255,255);text-align: center;font-weight: bold;font-size: 12px;">The one, the only, Zerbaib!</em></div>
-                    <div class="col" style="text-align: center;"><strong style="color: rgb(255,255,255);text-align: center;font-size: 18px;">DEVELOPER &amp; BUSINESSMAN</strong></div>
-                </div>
-                <div class="row" style="color: rgb(255,255,255);">
-                    <div class="col" style="text-align: center;margin-top: 10px;"><a href="https://discord.gg/ESzHqadj5J"><span style="width:50px;height:50px;padding:5px;background:rgb(28, 33, 40);margin:5px;border-style:none;border-radius:10px;"><img src="assets/img/discord.png?h=a35db30816a8a507c8c0acd727b84ef4" style="width: 20px;height: 20px;margin: 1px;padding: 0px;margin-top: -2px;"></span></a><a href="https://github.com/Zerbaib"><span style="width: 50px;height: 50px;padding: 5px;background: rgb(28, 33, 40);margin: 5px;border-style: none;border-radius: 10px;"><img src="assets/img/github-mark-white.png?h=5a6965ee281a03b0c59da90df835d5ce" style="width: 20px;height: 20px;margin: 1px;padding: 0px;margin-top: -2px;border-radius: 50px;"></span></a><a href="https://twitter.com/zerbaib"><span style="width: 50px;height: 50px;padding: 5px;background: rgb(28, 33, 40);margin: 5px;border-style: none;border-radius: 10px;"><img src="assets/img/twitter.png?h=519da96081e7fe7628e14b3eb3f2e387" style="width: 20px;height: 20px;margin: 1px;padding: 0px;margin-top: -2px;"></span></a></div>
-                </div>
+<body>
+    <!-- ============ NAVBAR ============ -->
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="#top" class="brand">
+                <img src="assets/img/Z_no_bg.png" alt="Z">
+                <span>zerbaib</span>
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#projects" data-i18n="nav.projects">Projects</a>
+                <a href="#network" data-i18n="nav.network">Network</a>
+                <a href="#skills" data-i18n="nav.skills">Skills</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn lang-btn" id="lang-toggle" type="button" aria-label="Change language" title="FR / EN">
+                    <span id="lang-label">FR</span>
+                </button>
+                <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle theme" title="Theme">
+                    <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                    <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Menu">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
             </div>
         </div>
-        <div class="row" style="margin-right: 15px;margin-left: 15px;margin-top: 50px;margin-bottom: 10px;">
-            <div class="col" style="padding: 5px;text-align: center; font-size: larger;"><strong>I am Zerbaib aka Hugo, I am 18 years old. I am</strong><strong style="color: rgb(75,85,192);">&nbsp;Developer</strong><strong>,&nbsp;</strong><strong style="color: rgb(75,85,192);">Computer Scientist</strong><strong>&nbsp;and&nbsp;</strong><strong style="color: rgb(75,85,192);">Project Creator</strong><strong>. I am a real multi-function tool, from development to hardware maintenance through the network. Future professional developer, eternal fan of video games and&nbsp;</strong><strong style="color: rgb(75,85,192);">expert in the field of Discord bots with more than 6 years of experience</strong><strong>&nbsp;!</strong></div>
-        </div><!-- Start: CleanFooter -->
-        <footer class="text-center py-4" style="max-width: 750px;margin-top: 50px;margin-bottom: -10px;">
-            <div class="container" style="border-top: 4px solid rgb(43, 46, 51);border-radius: 10px;padding-top: 10px;">
-                <strong style="color: rgb(255,255,255);">Made with&nbsp;❤️ by Zerbaib | © 2026</strong>
+    </header>
+
+    <main id="top">
+        <!-- ============ HERO ============ -->
+        <section class="hero">
+            <div class="hero-avatar">
+                <img src="assets/img/Z_no_bg.png" alt="Zerbaib">
             </div>
-            <div class="container" style="border-bottom: 4px solid rgb(43, 46, 51);border-radius: 10px;padding-top: 10px;">
-                <em style="color: rgb(255,255,255); font-size: smaller;">This website is hosted on GitHub Pages, and it respects EU and American law.</em>
+            <div class="hero-text">
+                <p class="eyebrow mono">&gt; whoami</p>
+                <h1>Zerbaib <span class="muted">aka Hugo</span> <img src="assets/img/verified.png" alt="verified" class="verified"></h1>
+                <p class="tagline" data-i18n-html="hero.tagline">Python <span class="accent">developer</span>, Discord bot expert and <span class="accent">network &amp; server</span> enthusiast.</p>
+                <p class="lead" data-i18n="hero.lead">French developer who loves building things end to end: from Python libraries and Discord bots to routers, hypervisors and my own autonomous system on DN42.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero.cta">See my projects</a>
+                    <a href="https://github.com/Zerbaib" class="btn btn-ghost" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+                <ul class="hero-stats">
+                    <li><strong>6+</strong><span data-i18n="hero.stat1">years of Discord bots</span></li>
+                    <li><strong>AS</strong><span data-i18n="hero.stat2">operator on DN42</span></li>
+                    <li><strong>🇫🇷</strong><span data-i18n="hero.stat3">based in France</span></li>
+                </ul>
             </div>
-        </footer><!-- End: CleanFooter -->
-    </div><!-- End: CleanHero -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </section>
+
+        <!-- ============ FEATURED PROJECTS ============ -->
+        <section id="projects" class="section">
+            <div class="section-head">
+                <p class="eyebrow mono">01 /</p>
+                <h2 data-i18n="projects.title">Featured projects</h2>
+                <p class="section-sub" data-i18n="projects.sub">The projects I'm the most proud of.</p>
+            </div>
+
+            <article class="feature">
+                <div class="feature-body">
+                    <div class="feature-tags">
+                        <span class="tag tag-accent" data-i18n="projects.flagship">Flagship</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">requests</span>
+                    </div>
+                    <h3>Volta.py</h3>
+                    <p data-i18n="volta.desc">The official Python library for the Volta Music public API. A lightweight client with a clean <code>client.get</code> / <code>post</code> / <code>put</code> / <code>delete</code> interface to manage your library, playlists and the global catalog.</p>
+                    <ul class="checks">
+                        <li data-i18n="volta.f1">Automatic token management: fetch, refresh and persist to disk</li>
+                        <li data-i18n="volta.f2">Silent retry on 401 and background auto-refresh thread</li>
+                        <li data-i18n="volta.f3">Typed exceptions (NotFoundError, RateLimitError…)</li>
+                        <li data-i18n="volta.f4">Context manager for a clean shutdown, client-side search helpers</li>
+                    </ul>
+                    <div class="feature-links">
+                        <a href="https://github.com/VoltaMusic/Volta.py" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="common.repo">View the repository</a>
+                        <a href="https://volta-music.com" class="btn btn-ghost" target="_blank" rel="noopener">volta-music.com</a>
+                    </div>
+                </div>
+                <div class="feature-visual">
+                    <div class="code-window">
+                        <div class="code-bar"><i></i><i></i><i></i><span class="mono">main.py</span></div>
+<pre class="mono"><code><span class="k">from</span> VoltaLibPython <span class="k">import</span> VoltaClient
+
+<span class="k">with</span> VoltaClient() <span class="k">as</span> client:
+    tracks = client.get.library.tracks(
+        search=<span class="s">"daft punk"</span>
+    )
+    pl = client.post.library.playlist(
+        <span class="s">"Roadtrip"</span>
+    )
+    client.post.library.playlist_track(
+        pl[<span class="s">"id"</span>], tracks[<span class="n">0</span>]
+    )</code></pre>
+                    </div>
+                    <code class="install mono">pip install git+https://github.com/VoltaMusic/Volta.py.git</code>
+                </div>
+            </article>
+
+            <article class="feature feature-reverse">
+                <div class="feature-body">
+                    <div class="feature-tags">
+                        <span class="tag tag-accent" data-i18n="projects.flagship">Flagship</span>
+                        <span class="tag">disnake</span>
+                        <span class="tag">MariaDB</span>
+                        <span class="tag">Pillow</span>
+                    </div>
+                    <h3>TheDiscordBot</h3>
+                    <p data-i18n="tdb.desc">My all-in-one Discord bot written in Python with disnake. The result of more than 6 years of experience building bots for community servers.</p>
+                    <ul class="checks">
+                        <li data-i18n="tdb.f1">Modular architecture: commands loaded automatically as extensions</li>
+                        <li data-i18n="tdb.f2">MariaDB / MySQL database for persistent data</li>
+                        <li data-i18n="tdb.f3">Config file generated on first launch, custom logger</li>
+                        <li data-i18n="tdb.f4">Image generation with Pillow, formatted tables with tabulate</li>
+                    </ul>
+                    <div class="feature-links">
+                        <a href="https://github.com/Zerbaib/TheDiscordBot" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="common.repo">View the repository</a>
+                        <a href="https://discord.gg/ESzHqadj5J" class="btn btn-ghost" target="_blank" rel="noopener" data-i18n="common.discord">Join the Discord</a>
+                    </div>
+                </div>
+                <div class="feature-visual">
+                    <div class="discord-mock">
+                        <div class="dm-head"><span class="dm-hash">#</span> general</div>
+                        <div class="dm-msg">
+                            <img src="assets/img/Z_no_bg.png" alt="">
+                            <div>
+                                <p class="dm-name">zerbaib</p>
+                                <p class="dm-cmd mono">/rank</p>
+                            </div>
+                        </div>
+                        <div class="dm-msg">
+                            <span class="dm-bot-avatar"><img src="assets/img/logos/discord.svg" alt=""></span>
+                            <div class="dm-full">
+                                <p class="dm-name">TheDiscordBot <span class="dm-badge">BOT</span></p>
+                                <div class="dm-embed">
+                                    <p class="dm-embed-title" data-i18n="tdb.embedTitle">Level 42 · 13 370 XP</p>
+                                    <div class="dm-bar"><span></span></div>
+                                    <p class="dm-embed-foot mono">disnake 2.12 · MariaDB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <h3 class="sub-title" data-i18n="projects.others">Other projects</h3>
+            <div class="grid grid-4">
+                <a class="card card-link" href="https://github.com/Zerbaib/CleanDiscordBot" target="_blank" rel="noopener">
+                    <img src="assets/img/screens/screen001.png" alt="CleanDiscordBot" class="card-img">
+                    <h4>CleanDiscordBot</h4>
+                    <p data-i18n="other.cdb">Discord bot in Python with disnake: moderation, ranking, economy and more.</p>
+                </a>
+                <a class="card card-link" href="https://github.com/Zerbaib/ArduinoTrafficLight" target="_blank" rel="noopener">
+                    <img src="assets/img/screens/screen002.png" alt="ArduinoTrafficLight" class="card-img">
+                    <h4>ArduinoTrafficLight</h4>
+                    <p data-i18n="other.atl">Four fully automatic traffic lights made with Arduino for a school project.</p>
+                </a>
+                <a class="card card-link" href="https://liberagroup.fr/" target="_blank" rel="noopener">
+                    <img src="assets/img/screens/screen003.png" alt="LiberaGroup" class="card-img">
+                    <h4>LiberaGroup</h4>
+                    <p data-i18n="other.lg">French non-profit (law 1901) founded by four IT students to make IT simple and accessible.</p>
+                </a>
+                <a class="card card-link" href="https://github.com/Zerbaib/BetterCalculaPy" target="_blank" rel="noopener">
+                    <img src="assets/img/screens/screen004.png" alt="CalculaPy" class="card-img">
+                    <h4>CalculaPy</h4>
+                    <p data-i18n="other.calc">A calculator made in Python with the BetterTkinter library.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============ NETWORK & SERVERS ============ -->
+        <section id="network" class="section">
+            <div class="section-head">
+                <p class="eyebrow mono">02 /</p>
+                <h2 data-i18n="network.title">Network &amp; servers</h2>
+                <p class="section-sub" data-i18n="network.sub">Beyond code, I build and run my own infrastructure.</p>
+            </div>
+
+            <article class="dn42">
+                <div class="dn42-text">
+                    <span class="tag tag-accent">DN42 · BGP</span>
+                    <h3 data-i18n="dn42.title">I operate my own AS on DN42</h3>
+                    <p data-i18n="dn42.desc">DN42 is a decentralized network run by enthusiasts that reproduces the technologies of the Internet: BGP, autonomous systems, IP allocations, DNS and a registry. I own an autonomous system on it: I manage my own address space, set up peering sessions with other operators and route traffic with BGP — exactly like an ISP, at home scale.</p>
+                </div>
+                <div class="dn42-diagram" aria-hidden="true">
+                    <svg viewBox="0 0 260 180" fill="none">
+                        <g class="dg-links">
+                            <line x1="130" y1="90" x2="40" y2="35"/>
+                            <line x1="130" y1="90" x2="225" y2="40"/>
+                            <line x1="130" y1="90" x2="45" y2="150"/>
+                            <line x1="130" y1="90" x2="220" y2="145"/>
+                            <line x1="40" y1="35" x2="225" y2="40" class="dim"/>
+                            <line x1="45" y1="150" x2="220" y2="145" class="dim"/>
+                        </g>
+                        <g class="dg-peers">
+                            <circle cx="40" cy="35" r="13"/><circle cx="225" cy="40" r="13"/>
+                            <circle cx="45" cy="150" r="13"/><circle cx="220" cy="145" r="13"/>
+                        </g>
+                        <circle cx="130" cy="90" r="30" class="dg-me"/>
+                        <text x="130" y="86" text-anchor="middle" class="dg-t1">MY AS</text>
+                        <text x="130" y="101" text-anchor="middle" class="dg-t2">BGP</text>
+                        <text x="40" y="39" text-anchor="middle" class="dg-t3">AS</text>
+                        <text x="225" y="44" text-anchor="middle" class="dg-t3">AS</text>
+                        <text x="45" y="154" text-anchor="middle" class="dg-t3">AS</text>
+                        <text x="220" y="149" text-anchor="middle" class="dg-t3">AS</text>
+                    </svg>
+                </div>
+            </article>
+
+            <div class="grid grid-3">
+                <div class="card skill-card">
+                    <span class="logo-tile"><span class="mono-logo logo-mikrotik" style="--brand:var(--text)"></span></span>
+                    <h4>MikroTik</h4>
+                    <p data-i18n="net.mikrotik">RouterOS configuration: routing, firewall, NAT, VLANs and BGP sessions.</p>
+                </div>
+                <div class="card skill-card">
+                    <span class="logo-tile"><span class="mono-logo logo-cisco" style="--brand:#1BA0D7"></span></span>
+                    <h4>Cisco</h4>
+                    <p data-i18n="net.cisco">Cisco IOS switches and routers: VLANs, trunks, routing and CLI administration.</p>
+                </div>
+                <div class="card skill-card">
+                    <span class="logo-tile"><span class="mono-logo logo-proxmox" style="--brand:#E57000"></span></span>
+                    <h4>Proxmox VE</h4>
+                    <p data-i18n="net.proxmox">Virtualization of my servers: VMs, LXC containers, storage and backups.</p>
+                </div>
+                <div class="card skill-card">
+                    <span class="logo-tile glyph mono">DNS</span>
+                    <h4>DNS</h4>
+                    <p data-i18n="net.dns">Running authoritative and recursive DNS servers, managing zones and records.</p>
+                </div>
+                <div class="card skill-card">
+                    <span class="logo-tile"><img src="assets/img/logos/nginx.svg" alt=""></span>
+                    <h4>Proxy</h4>
+                    <p data-i18n="net.proxy">Reverse proxies (Nginx) to expose services securely with HTTPS.</p>
+                </div>
+                <div class="card skill-card">
+                    <span class="logo-tile glyph mono">BGP</span>
+                    <h4 data-i18n="net.routingTitle">Routing &amp; BGP</h4>
+                    <p data-i18n="net.routing">Autonomous system, peering, prefixes and route announcements on DN42.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section id="skills" class="section">
+            <div class="section-head">
+                <p class="eyebrow mono">03 /</p>
+                <h2 data-i18n="skills.title">Skills</h2>
+                <p class="section-sub" data-i18n="skills.sub">The languages, systems and tools I use every day.</p>
+            </div>
+
+            <div class="skill-group">
+                <h3 data-i18n="skills.lang">Languages</h3>
+                <ul class="logos">
+                    <li><img src="assets/img/logos/python.svg" alt=""><span>Python</span></li>
+                    <li><img src="assets/img/logos/html5.svg" alt=""><span>HTML5</span></li>
+                    <li><img src="assets/img/logos/css3.svg" alt=""><span>CSS3</span></li>
+                    <li><img src="assets/img/logos/bash.svg" alt=""><span>Bash</span></li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h3 data-i18n="skills.os">Operating systems</h3>
+                <ul class="logos">
+                    <li><img src="assets/img/logos/linux.svg" alt=""><span>Linux</span></li>
+                    <li><img src="assets/img/logos/debian.svg" alt=""><span>Debian</span></li>
+                    <li><img src="assets/img/logos/ubuntu.svg" alt=""><span>Ubuntu</span></li>
+                    <li><img src="assets/img/logos/windows11.svg" alt=""><span>Windows</span></li>
+                    <li><img src="assets/img/logos/android.svg" alt=""><span>Android</span></li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h3 data-i18n="skills.tools">Tools, servers &amp; databases</h3>
+                <ul class="logos">
+                    <li><img src="assets/img/logos/git.svg" alt=""><span>Git</span></li>
+                    <li><img src="assets/img/logos/docker.svg" alt=""><span>Docker</span></li>
+                    <li><img src="assets/img/logos/nginx.svg" alt=""><span>Nginx</span></li>
+                    <li><img src="assets/img/logos/mariadb.svg" alt=""><span>MariaDB</span></li>
+                    <li><img src="assets/img/logos/mysql.svg" alt=""><span>MySQL</span></li>
+                    <li><img src="assets/img/logos/sqlite.svg" alt=""><span>SQLite</span></li>
+                    <li><img src="assets/img/logos/bootstrap.svg" alt=""><span>Bootstrap</span></li>
+                    <li><img src="assets/img/logos/githubactions.svg" alt=""><span>GitHub Actions</span></li>
+                    <li><img src="assets/img/logos/vscode.svg" alt=""><span>VS Code</span></li>
+                    <li><img src="assets/img/logos/pycharm.svg" alt=""><span>PyCharm</span></li>
+                    <li><span class="mono-logo logo-pypi" style="--brand:#3775A9"></span><span>PyPI</span></li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h3 data-i18n="skills.libs">Python libraries I master</h3>
+                <div class="grid grid-3 libs">
+                    <div class="lib lib-main">
+                        <span class="mono-logo logo-discord" style="--brand:#5865F2"></span>
+                        <div>
+                            <p class="lib-name mono">disnake</p>
+                            <p data-i18n="lib.disnake">Discord bots: slash commands, cogs, events, embeds, views.</p>
+                        </div>
+                    </div>
+                    <div class="lib">
+                        <p class="lib-name mono">requests</p>
+                        <p data-i18n="lib.requests">HTTP clients and REST API wrappers (Volta.py).</p>
+                    </div>
+                    <div class="lib">
+                        <p class="lib-name mono">mysql-connector</p>
+                        <p data-i18n="lib.mysql">MariaDB / MySQL access from my bots.</p>
+                    </div>
+                    <div class="lib">
+                        <p class="lib-name mono">Pillow</p>
+                        <p data-i18n="lib.pillow">Image generation and manipulation (rank cards…).</p>
+                    </div>
+                    <div class="lib">
+                        <p class="lib-name mono">tabulate</p>
+                        <p data-i18n="lib.tabulate">Clean text tables for logs and bot output.</p>
+                    </div>
+                    <div class="lib">
+                        <p class="lib-name mono">Tkinter / BetterTkinter</p>
+                        <p data-i18n="lib.tk">Desktop GUI applications (CalculaPy).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3 data-i18n="skills.learning">Currently learning</h3>
+                <ul class="logos logos-small">
+                    <li><img src="assets/img/logos/javascript.svg" alt=""><span>JavaScript</span></li>
+                    <li><img src="assets/img/logos/typescript.svg" alt=""><span>TypeScript</span></li>
+                    <li><img src="assets/img/logos/java.svg" alt=""><span>Java</span></li>
+                    <li><img src="assets/img/logos/php.svg" alt=""><span>PHP</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="section">
+            <div class="contact">
+                <div>
+                    <p class="eyebrow mono">04 /</p>
+                    <h2 data-i18n="contact.title">Let's talk</h2>
+                    <p class="section-sub" data-i18n="contact.sub">A project, a bot, a peering on DN42? Reach out!</p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:hugo.hennetin@proton.me" class="contact-item">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://discord.gg/ESzHqadj5J" class="contact-item" target="_blank" rel="noopener">
+                        <span class="mono-logo logo-discord" style="--brand:currentColor"></span>
+                        <span>Discord · @zerbaib</span>
+                    </a>
+                    <a href="https://github.com/Zerbaib" class="contact-item" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://twitter.com/zerbaib" class="contact-item" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        <span>X / Twitter</span>
+                    </a>
+                </div>
+            </div>
+            <p class="discord-id mono">Discord ID · 701805250524217394</p>
+        </section>
+    </main>
+
+    <!-- Start: CleanFooter -->
+    <footer class="footer">
+        <strong>Made with&nbsp;❤️ by Zerbaib | © 2026</strong>
+        <em data-i18n="footer.legal">This website is hosted on GitHub Pages, and it respects EU and American law.</em>
+    </footer><!-- End: CleanFooter -->
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
