@@ -12,13 +12,15 @@
         'hero.tagline': '<span class="accent">Développeur</span> Python, expert en bots Discord et passionné de <span class="accent">réseau &amp; serveurs</span>.',
         'hero.lead': 'Développeur français qui aime construire de A à Z : des librairies Python et des bots Discord jusqu’aux routeurs, aux hyperviseurs et à mon propre système autonome sur DN42.',
         'hero.cta': 'Voir mes projets',
-        'hero.stat1': 'ans de bots Discord',
+        'nf.role': 'Développeur Python',
+        'nf.focus': 'Bots Discord · réseau &amp; serveurs',
+        'hero.stat1': '6+ ans de bots Discord',
         'hero.stat2': 'opérateur sur DN42',
-        'hero.stat3': 'basé en France',
+        'hero.stat3': 'France',
 
         'projects.title': 'Projets phares',
         'projects.sub': 'Les projets dont je suis le plus fier.',
-        'projects.flagship': 'Projet phare',
+        'projects.flagship': 'projet-phare',
         'projects.others': 'Autres projets',
         'common.repo': 'Voir le dépôt',
         'common.discord': 'Rejoindre le Discord',
@@ -55,11 +57,11 @@
 
         'skills.title': 'Compétences',
         'skills.sub': 'Les langages, systèmes et outils que j’utilise au quotidien.',
-        'skills.lang': 'Langages',
-        'skills.os': 'Systèmes d’exploitation',
-        'skills.tools': 'Outils, serveurs &amp; bases de données',
+        'skills.lang': 'langages',
+        'skills.os': 'systemes-exploitation',
+        'skills.tools': 'outils-serveurs-bdd',
         'skills.libs': 'Librairies Python que je maîtrise',
-        'skills.learning': 'En cours d’apprentissage',
+        'skills.learning': 'en-apprentissage',
         'lib.disnake': 'Bots Discord : slash commands, cogs, événements, embeds, views.',
         'lib.requests': 'Clients HTTP et wrappers d’API REST (Volta.py).',
         'lib.mysql': 'Accès MariaDB / MySQL depuis mes bots.',
@@ -113,12 +115,29 @@
         store('theme', next);
     });
 
-    /* ---------- Mobile menu ---------- */
-    var links = document.getElementById('nav-links');
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-        links.classList.toggle('open');
+    /* ---------- tmux status bar: clock ---------- */
+    var clock = document.getElementById('sb-clock');
+    function tick() {
+        var d = new Date();
+        clock.textContent = ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2);
+    }
+    tick();
+    setInterval(tick, 15000);
+
+    /* ---------- tmux status bar: highlight the current window ---------- */
+    var tabs = document.querySelectorAll('#sb-windows a');
+    var targets = [];
+    tabs.forEach(function (a) {
+        var el = document.getElementById(a.getAttribute('href').slice(1));
+        if (el) targets.push({ tab: a, el: el });
     });
-    links.addEventListener('click', function (e) {
-        if (e.target.tagName === 'A') links.classList.remove('open');
-    });
+    function onScroll() {
+        var y = window.scrollY + window.innerHeight * 0.35;
+        var current = targets[0];
+        targets.forEach(function (t) { if (t.el.offsetTop <= y) current = t; });
+        if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) current = targets[targets.length - 1];
+        tabs.forEach(function (a) { a.classList.toggle('active', a === current.tab); });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 })();
