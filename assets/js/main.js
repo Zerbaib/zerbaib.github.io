@@ -4,10 +4,10 @@
     'use strict';
 
     var FR = {
-        'nav.projects': 'Projets',
-        'nav.network': 'Réseau',
-        'nav.skills': 'Compétences',
-        'nav.contact': 'Contact',
+        'nav.projects': 'projets',
+        'nav.network': 'réseau',
+        'nav.skills': 'compétences',
+        'nav.contact': 'contact',
 
         'hero.tagline': '<span class="accent">Développeur</span> Python, expert en bots Discord et passionné de <span class="accent">réseau &amp; serveurs</span>.',
         'hero.lead': 'Développeur français qui aime construire de A à Z : des librairies Python et des bots Discord jusqu’aux routeurs, aux hyperviseurs et à mon propre système autonome sur DN42.',
@@ -36,10 +36,10 @@
         'tdb.f4': 'Génération d’images avec Pillow, tableaux formatés avec tabulate',
         'tdb.embedTitle': 'Niveau 42 · 13 370 XP',
 
-        'other.cdb': 'Bot Discord en Python avec disnake : modération, classement, économie et plus.',
+        'other.cdb': 'L’ancêtre de TheDiscordBot : mon premier bot Discord tout-en-un en Python avec disnake (modération, classement, économie…).',
+        'other.legacy': 'ancêtre',
         'other.atl': 'Quatre feux tricolores entièrement automatiques réalisés avec Arduino pour un projet scolaire.',
         'other.lg': 'Association loi 1901 fondée par quatre étudiants en informatique pour rendre l’informatique simple et accessible.',
-        'other.calc': 'Une calculatrice réalisée en Python avec la librairie BetterTkinter.',
 
         'network.title': 'Réseau &amp; serveurs',
         'network.sub': 'Au-delà du code, je monte et j’administre ma propre infrastructure.',
@@ -65,7 +65,7 @@
         'lib.mysql': 'Accès MariaDB / MySQL depuis mes bots.',
         'lib.pillow': 'Génération et manipulation d’images (cartes de rang…).',
         'lib.tabulate': 'Tableaux texte propres pour les logs et les réponses du bot.',
-        'lib.tk': 'Applications de bureau avec interface graphique (CalculaPy).',
+        'lib.tk': 'Applications de bureau avec interface graphique.',
 
         'contact.title': 'Discutons',
         'contact.sub': 'Un projet, un bot, un peering sur DN42 ? Contactez-moi !',

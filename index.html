@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="assets/img/Z_no_bg.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Apply saved theme before paint to avoid a flash -->
     <script>
@@ -29,13 +29,13 @@
         <div class="nav-inner">
             <a href="#top" class="brand">
                 <img src="assets/img/Z_no_bg.png" alt="Z">
-                <span>zerbaib</span>
+                <span><span class="pu">zerbaib</span><span class="muted">@</span>portfolio<span class="cursor">_</span></span>
             </a>
             <nav class="nav-links" id="nav-links">
-                <a href="#projects" data-i18n="nav.projects">Projects</a>
-                <a href="#network" data-i18n="nav.network">Network</a>
-                <a href="#skills" data-i18n="nav.skills">Skills</a>
-                <a href="#contact" data-i18n="nav.contact">Contact</a>
+                <a href="#projects" data-i18n="nav.projects">projects</a>
+                <a href="#network" data-i18n="nav.network">network</a>
+                <a href="#skills" data-i18n="nav.skills">skills</a>
+                <a href="#contact" data-i18n="nav.contact">contact</a>
             </nav>
             <div class="nav-actions">
                 <button class="icon-btn lang-btn" id="lang-toggle" type="button" aria-label="Change language" title="FR / EN">
@@ -55,62 +55,73 @@
     <main id="top">
         <!-- ============ HERO ============ -->
         <section class="hero">
-            <div class="hero-avatar">
-                <img src="assets/img/Z_no_bg.png" alt="Zerbaib">
-            </div>
-            <div class="hero-text">
-                <p class="eyebrow mono">&gt; whoami</p>
-                <h1>Zerbaib <span class="muted">aka Hugo</span> <img src="assets/img/verified.png" alt="verified" class="verified"></h1>
-                <p class="tagline" data-i18n-html="hero.tagline">Python <span class="accent">developer</span>, Discord bot expert and <span class="accent">network &amp; server</span> enthusiast.</p>
-                <p class="lead" data-i18n="hero.lead">French developer who loves building things end to end: from Python libraries and Discord bots to routers, hypervisors and my own autonomous system on DN42.</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary" data-i18n="hero.cta">See my projects</a>
-                    <a href="https://github.com/Zerbaib" class="btn btn-ghost" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                        GitHub
-                    </a>
+            <div class="term">
+                <div class="win-bar"><i></i><i></i><i></i><span>zerbaib@portfolio: ~</span></div>
+                <div class="term-body">
+                    <p class="prompt"><span class="pu">zerbaib@portfolio</span>:<span class="pp">~</span>$ <span class="pc type">whoami</span></p>
+                    <div class="hero-grid">
+                        <div class="hero-avatar">
+                            <img src="assets/img/Z_no_bg.png" alt="Zerbaib">
+                        </div>
+                        <div class="hero-text">
+                            <h1>Zerbaib <span class="muted">aka Hugo</span> <img src="assets/img/verified.png" alt="verified" class="verified"></h1>
+                            <p class="tagline" data-i18n-html="hero.tagline">Python <span class="accent">developer</span>, Discord bot expert and <span class="accent">network &amp; server</span> enthusiast.</p>
+                            <p class="lead" data-i18n="hero.lead">French developer who loves building things end to end: from Python libraries and Discord bots to routers, hypervisors and my own autonomous system on DN42.</p>
+                            <ul class="hero-stats">
+                                <li><strong>6+</strong><span data-i18n="hero.stat1">years of Discord bots</span></li>
+                                <li><strong>AS</strong><span data-i18n="hero.stat2">operator on DN42</span></li>
+                                <li><strong>FR</strong><span data-i18n="hero.stat3">based in France</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="prompt"><span class="pu">zerbaib@portfolio</span>:<span class="pp">~</span>$ <span class="pc">ls ./links</span></p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary" data-i18n="hero.cta">See my projects</a>
+                        <a href="https://github.com/Zerbaib" class="btn btn-ghost" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                    <p class="prompt"><span class="pu">zerbaib@portfolio</span>:<span class="pp">~</span>$ <span class="cursor">_</span></p>
                 </div>
-                <ul class="hero-stats">
-                    <li><strong>6+</strong><span data-i18n="hero.stat1">years of Discord bots</span></li>
-                    <li><strong>AS</strong><span data-i18n="hero.stat2">operator on DN42</span></li>
-                    <li><strong>🇫🇷</strong><span data-i18n="hero.stat3">based in France</span></li>
-                </ul>
             </div>
         </section>
 
         <!-- ============ FEATURED PROJECTS ============ -->
         <section id="projects" class="section">
             <div class="section-head">
-                <p class="eyebrow mono">01 /</p>
+                <p class="prompt"><span class="pu">zerbaib@portfolio</span>:<span class="pp">~</span>$ <span class="pc">ls -l ~/projects</span></p>
                 <h2 data-i18n="projects.title">Featured projects</h2>
                 <p class="section-sub" data-i18n="projects.sub">The projects I'm the most proud of.</p>
             </div>
 
             <article class="feature">
-                <div class="feature-body">
-                    <div class="feature-tags">
-                        <span class="tag tag-accent" data-i18n="projects.flagship">Flagship</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">REST API</span>
-                        <span class="tag">requests</span>
+                <div class="win-bar"><i></i><i></i><i></i><span>~/projects/volta.py</span></div>
+                <div class="feature-inner">
+                    <div class="feature-body">
+                        <div class="feature-tags">
+                            <span class="tag tag-accent" data-i18n="projects.flagship">Flagship</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">requests</span>
+                        </div>
+                        <h3>Volta.py</h3>
+                        <p data-i18n="volta.desc">The official Python library for the Volta Music public API. A lightweight client with a clean <code>client.get</code> / <code>post</code> / <code>put</code> / <code>delete</code> interface to manage your library, playlists and the global catalog.</p>
+                        <ul class="checks">
+                            <li data-i18n="volta.f1">Automatic token management: fetch, refresh and persist to disk</li>
+                            <li data-i18n="volta.f2">Silent retry on 401 and background auto-refresh thread</li>
+                            <li data-i18n="volta.f3">Typed exceptions (NotFoundError, RateLimitError…)</li>
+                            <li data-i18n="volta.f4">Context manager for a clean shutdown, client-side search helpers</li>
+                        </ul>
+                        <div class="feature-links">
+                            <a href="https://github.com/VoltaMusic/Volta.py" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="common.repo">View the repository</a>
+                            <a href="https://volta-music.com" class="btn btn-ghost" target="_blank" rel="noopener">volta-music.com</a>
+                        </div>
                     </div>
-                    <h3>Volta.py</h3>
-                    <p data-i18n="volta.desc">The official Python library for the Volta Music public API. A lightweight client with a clean <code>client.get</code> / <code>post</code> / <code>put</code> / <code>delete</code> interface to manage your library, playlists and the global catalog.</p>
-                    <ul class="checks">
-                        <li data-i18n="volta.f1">Automatic token management: fetch, refresh and persist to disk</li>
-                        <li data-i18n="volta.f2">Silent retry on 401 and background auto-refresh thread</li>
-                        <li data-i18n="volta.f3">Typed exceptions (NotFoundError, RateLimitError…)</li>
-                        <li data-i18n="volta.f4">Context manager for a clean shutdown, client-side search helpers</li>
-                    </ul>
-                    <div class="feature-links">
-                        <a href="https://github.com/VoltaMusic/Volta.py" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="common.repo">View the repository</a>
-                        <a href="https://volta-music.com" class="btn btn-ghost" target="_blank" rel="noopener">volta-music.com</a>
-                    </div>
-                </div>
-                <div class="feature-visual">
-                    <div class="code-window">
-                        <div class="code-bar"><i></i><i></i><i></i><span class="mono">main.py</span></div>
-<pre class="mono"><code><span class="k">from</span> VoltaLibPython <span class="k">import</span> VoltaClient
+                    <div class="feature-visual">
+                        <div class="code-window">
+                            <div class="code-bar"><i></i><i></i><i></i><span>main.py</span></div>
+<pre><code><span class="k">from</span> VoltaLibPython <span class="k">import</span> VoltaClient
 
 <span class="k">with</span> VoltaClient() <span class="k">as</span> client:
     tracks = client.get.library.tracks(
@@ -122,50 +133,54 @@
     client.post.library.playlist_track(
         pl[<span class="s">"id"</span>], tracks[<span class="n">0</span>]
     )</code></pre>
+                        </div>
+                        <code class="install"><span class="pp">$</span> pip install git+https://github.com/VoltaMusic/Volta.py.git</code>
                     </div>
-                    <code class="install mono">pip install git+https://github.com/VoltaMusic/Volta.py.git</code>
                 </div>
             </article>
 
             <article class="feature feature-reverse">
-                <div class="feature-body">
-                    <div class="feature-tags">
-                        <span class="tag tag-accent" data-i18n="projects.flagship">Flagship</span>
-                        <span class="tag">disnake</span>
-                        <span class="tag">MariaDB</span>
-                        <span class="tag">Pillow</span>
-                    </div>
-                    <h3>TheDiscordBot</h3>
-                    <p data-i18n="tdb.desc">My all-in-one Discord bot written in Python with disnake. The result of more than 6 years of experience building bots for community servers.</p>
-                    <ul class="checks">
-                        <li data-i18n="tdb.f1">Modular architecture: commands loaded automatically as extensions</li>
-                        <li data-i18n="tdb.f2">MariaDB / MySQL database for persistent data</li>
-                        <li data-i18n="tdb.f3">Config file generated on first launch, custom logger</li>
-                        <li data-i18n="tdb.f4">Image generation with Pillow, formatted tables with tabulate</li>
-                    </ul>
-                    <div class="feature-links">
-                        <a href="https://github.com/Zerbaib/TheDiscordBot" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="common.repo">View the repository</a>
-                        <a href="https://discord.gg/ESzHqadj5J" class="btn btn-ghost" target="_blank" rel="noopener" data-i18n="common.discord">Join the Discord</a>
-                    </div>
-                </div>
-                <div class="feature-visual">
-                    <div class="discord-mock">
-                        <div class="dm-head"><span class="dm-hash">#</span> general</div>
-                        <div class="dm-msg">
-                            <img src="assets/img/Z_no_bg.png" alt="">
-                            <div>
-                                <p class="dm-name">zerbaib</p>
-                                <p class="dm-cmd mono">/rank</p>
-                            </div>
+                <div class="win-bar"><i></i><i></i><i></i><span>~/projects/TheDiscordBot</span></div>
+                <div class="feature-inner">
+                    <div class="feature-body">
+                        <div class="feature-tags">
+                            <span class="tag tag-accent" data-i18n="projects.flagship">Flagship</span>
+                            <span class="tag">disnake</span>
+                            <span class="tag">MariaDB</span>
+                            <span class="tag">Pillow</span>
                         </div>
-                        <div class="dm-msg">
-                            <span class="dm-bot-avatar"><img src="assets/img/logos/discord.svg" alt=""></span>
-                            <div class="dm-full">
-                                <p class="dm-name">TheDiscordBot <span class="dm-badge">BOT</span></p>
-                                <div class="dm-embed">
-                                    <p class="dm-embed-title" data-i18n="tdb.embedTitle">Level 42 · 13 370 XP</p>
-                                    <div class="dm-bar"><span></span></div>
-                                    <p class="dm-embed-foot mono">disnake 2.12 · MariaDB</p>
+                        <h3>TheDiscordBot</h3>
+                        <p data-i18n="tdb.desc">My all-in-one Discord bot written in Python with disnake. The result of more than 6 years of experience building bots for community servers.</p>
+                        <ul class="checks">
+                            <li data-i18n="tdb.f1">Modular architecture: commands loaded automatically as extensions</li>
+                            <li data-i18n="tdb.f2">MariaDB / MySQL database for persistent data</li>
+                            <li data-i18n="tdb.f3">Config file generated on first launch, custom logger</li>
+                            <li data-i18n="tdb.f4">Image generation with Pillow, formatted tables with tabulate</li>
+                        </ul>
+                        <div class="feature-links">
+                            <a href="https://github.com/Zerbaib/TheDiscordBot" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="common.repo">View the repository</a>
+                            <a href="https://discord.gg/ESzHqadj5J" class="btn btn-ghost" target="_blank" rel="noopener" data-i18n="common.discord">Join the Discord</a>
+                        </div>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="discord-mock">
+                            <div class="dm-head"><span class="dm-hash">#</span> general</div>
+                            <div class="dm-msg">
+                                <img src="assets/img/Z_no_bg.png" alt="">
+                                <div>
+                                    <p class="dm-name">zerbaib</p>
+                                    <p class="dm-cmd">/rank</p>
+                                </div>
+                            </div>
+                            <div class="dm-msg">
+                                <span class="dm-bot-avatar"><img src="assets/img/logos/discord.svg" alt=""></span>
+                                <div class="dm-full">
+                                    <p class="dm-name">TheDiscordBot <span class="dm-badge">BOT</span></p>
+                                    <div class="dm-embed">
+                                        <p class="dm-embed-title" data-i18n="tdb.embedTitle">Level 42 · 13 370 XP</p>
+                                        <div class="dm-bar"><span></span></div>
+                                        <p class="dm-embed-foot">disnake 2.12 · MariaDB</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -174,11 +189,11 @@
             </article>
 
             <h3 class="sub-title" data-i18n="projects.others">Other projects</h3>
-            <div class="grid grid-4">
+            <div class="grid grid-3">
                 <a class="card card-link" href="https://github.com/Zerbaib/CleanDiscordBot" target="_blank" rel="noopener">
                     <img src="assets/img/screens/screen001.png" alt="CleanDiscordBot" class="card-img">
-                    <h4>CleanDiscordBot</h4>
-                    <p data-i18n="other.cdb">Discord bot in Python with disnake: moderation, ranking, economy and more.</p>
+                    <h4>CleanDiscordBot <span class="tag" data-i18n="other.legacy">ancestor</span></h4>
+                    <p data-i18n="other.cdb">The ancestor of TheDiscordBot: my first all-in-one Discord bot in Python with disnake (moderation, ranking, economy…).</p>
                 </a>
                 <a class="card card-link" href="https://github.com/Zerbaib/ArduinoTrafficLight" target="_blank" rel="noopener">
                     <img src="assets/img/screens/screen002.png" alt="ArduinoTrafficLight" class="card-img">
@@ -190,50 +205,48 @@
                     <h4>LiberaGroup</h4>
                     <p data-i18n="other.lg">French non-profit (law 1901) founded by four IT students to make IT simple and accessible.</p>
                 </a>
-                <a class="card card-link" href="https://github.com/Zerbaib/BetterCalculaPy" target="_blank" rel="noopener">
-                    <img src="assets/img/screens/screen004.png" alt="CalculaPy" class="card-img">
-                    <h4>CalculaPy</h4>
-                    <p data-i18n="other.calc">A calculator made in Python with the BetterTkinter library.</p>
-                </a>
             </div>
         </section>
 
         <!-- ============ NETWORK & SERVERS ============ -->
         <section id="network" class="section">
             <div class="section-head">
-                <p class="eyebrow mono">02 /</p>
+                <p class="prompt"><span class="pu">zerbaib@portfolio</span>:<span class="pp">~</span>$ <span class="pc">birdc show protocols</span></p>
                 <h2 data-i18n="network.title">Network &amp; servers</h2>
                 <p class="section-sub" data-i18n="network.sub">Beyond code, I build and run my own infrastructure.</p>
             </div>
 
             <article class="dn42">
-                <div class="dn42-text">
-                    <span class="tag tag-accent">DN42 · BGP</span>
-                    <h3 data-i18n="dn42.title">I operate my own AS on DN42</h3>
-                    <p data-i18n="dn42.desc">DN42 is a decentralized network run by enthusiasts that reproduces the technologies of the Internet: BGP, autonomous systems, IP allocations, DNS and a registry. I own an autonomous system on it: I manage my own address space, set up peering sessions with other operators and route traffic with BGP — exactly like an ISP, at home scale.</p>
-                </div>
-                <div class="dn42-diagram" aria-hidden="true">
-                    <svg viewBox="0 0 260 180" fill="none">
-                        <g class="dg-links">
-                            <line x1="130" y1="90" x2="40" y2="35"/>
-                            <line x1="130" y1="90" x2="225" y2="40"/>
-                            <line x1="130" y1="90" x2="45" y2="150"/>
-                            <line x1="130" y1="90" x2="220" y2="145"/>
-                            <line x1="40" y1="35" x2="225" y2="40" class="dim"/>
-                            <line x1="45" y1="150" x2="220" y2="145" class="dim"/>
-                        </g>
-                        <g class="dg-peers">
-                            <circle cx="40" cy="35" r="13"/><circle cx="225" cy="40" r="13"/>
-                            <circle cx="45" cy="150" r="13"/><circle cx="220" cy="145" r="13"/>
-                        </g>
-                        <circle cx="130" cy="90" r="30" class="dg-me"/>
-                        <text x="130" y="86" text-anchor="middle" class="dg-t1">MY AS</text>
-                        <text x="130" y="101" text-anchor="middle" class="dg-t2">BGP</text>
-                        <text x="40" y="39" text-anchor="middle" class="dg-t3">AS</text>
-                        <text x="225" y="44" text-anchor="middle" class="dg-t3">AS</text>
-                        <text x="45" y="154" text-anchor="middle" class="dg-t3">AS</text>
-                        <text x="220" y="149" text-anchor="middle" class="dg-t3">AS</text>
-                    </svg>
+                <div class="win-bar"><i></i><i></i><i></i><span>dn42 · bgp</span></div>
+                <div class="dn42-inner">
+                    <div class="dn42-text">
+                        <span class="tag tag-accent">DN42 · BGP</span>
+                        <h3 data-i18n="dn42.title">I operate my own AS on DN42</h3>
+                        <p data-i18n="dn42.desc">DN42 is a decentralized network run by enthusiasts that reproduces the technologies of the Internet: BGP, autonomous systems, IP allocations, DNS and a registry. I own an autonomous system on it: I manage my own address space, set up peering sessions with other operators and route traffic with BGP — exactly like an ISP, at home scale.</p>
+                    </div>
+                    <div class="dn42-diagram" aria-hidden="true">
+                        <svg viewBox="0 0 260 180" fill="none">
+                            <g class="dg-links">
+                                <line x1="130" y1="90" x2="40" y2="35"/>
+                                <line x1="130" y1="90" x2="225" y2="40"/>
+                                <line x1="130" y1="90" x2="45" y2="150"/>
+                                <line x1="130" y1="90" x2="220" y2="145"/>
+                                <line x1="40" y1="35" x2="225" y2="40" class="dim"/>
+                                <line x1="45" y1="150" x2="220" y2="145" class="dim"/>
+                            </g>
+                            <g class="dg-peers">
+                                <circle cx="40" cy="35" r="13"/><circle cx="225" cy="40" r="13"/>
+                                <circle cx="45" cy="150" r="13"/><circle cx="220" cy="145" r="13"/>
+                            </g>
+                            <circle cx="130" cy="90" r="30" class="dg-me"/>
+                            <text x="130" y="86" text-anchor="middle" class="dg-t1">MY AS</text>
+                            <text x="130" y="101" text-anchor="middle" class="dg-t2">BGP</text>
+                            <text x="40" y="39" text-anchor="middle" class="dg-t3">AS</text>
+                            <text x="225" y="44" text-anchor="middle" class="dg-t3">AS</text>
+                            <text x="45" y="154" text-anchor="middle" class="dg-t3">AS</text>
+                            <text x="220" y="149" text-anchor="middle" class="dg-t3">AS</text>
+                        </svg>
+                    </div>
                 </div>
             </article>
 
@@ -254,7 +267,7 @@
                     <p data-i18n="net.proxmox">Virtualization of my servers: VMs, LXC containers, storage and backups.</p>
                 </div>
                 <div class="card skill-card">
-                    <span class="logo-tile glyph mono">DNS</span>
+                    <span class="logo-tile glyph">DNS</span>
                     <h4>DNS</h4>
                     <p data-i18n="net.dns">Running authoritative and recursive DNS servers, managing zones and records.</p>
                 </div>
@@ -264,7 +277,7 @@
                     <p data-i18n="net.proxy">Reverse proxies (Nginx) to expose services securely with HTTPS.</p>
                 </div>
                 <div class="card skill-card">
-                    <span class="logo-tile glyph mono">BGP</span>
+                    <span class="logo-tile glyph">BGP</span>
                     <h4 data-i18n="net.routingTitle">Routing &amp; BGP</h4>
                     <p data-i18n="net.routing">Autonomous system, peering, prefixes and route announcements on DN42.</p>
                 </div>
@@ -274,7 +287,7 @@
         <!-- ============ SKILLS ============ -->
         <section id="skills" class="section">
             <div class="section-head">
-                <p class="eyebrow mono">03 /</p>
+                <p class="prompt"><span class="pu">zerbaib@portfolio</span>:<span class="pp">~</span>$ <span class="pc">cat ~/skills.txt</span></p>
                 <h2 data-i18n="skills.title">Skills</h2>
                 <p class="section-sub" data-i18n="skills.sub">The languages, systems and tools I use every day.</p>
             </div>
@@ -323,29 +336,29 @@
                     <div class="lib lib-main">
                         <span class="mono-logo logo-discord" style="--brand:#5865F2"></span>
                         <div>
-                            <p class="lib-name mono">disnake</p>
+                            <p class="lib-name">disnake</p>
                             <p data-i18n="lib.disnake">Discord bots: slash commands, cogs, events, embeds, views.</p>
                         </div>
                     </div>
                     <div class="lib">
-                        <p class="lib-name mono">requests</p>
+                        <p class="lib-name">requests</p>
                         <p data-i18n="lib.requests">HTTP clients and REST API wrappers (Volta.py).</p>
                     </div>
                     <div class="lib">
-                        <p class="lib-name mono">mysql-connector</p>
+                        <p class="lib-name">mysql-connector</p>
                         <p data-i18n="lib.mysql">MariaDB / MySQL access from my bots.</p>
                     </div>
                     <div class="lib">
-                        <p class="lib-name mono">Pillow</p>
+                        <p class="lib-name">Pillow</p>
                         <p data-i18n="lib.pillow">Image generation and manipulation (rank cards…).</p>
                     </div>
                     <div class="lib">
-                        <p class="lib-name mono">tabulate</p>
+                        <p class="lib-name">tabulate</p>
                         <p data-i18n="lib.tabulate">Clean text tables for logs and bot output.</p>
                     </div>
                     <div class="lib">
-                        <p class="lib-name mono">Tkinter / BetterTkinter</p>
-                        <p data-i18n="lib.tk">Desktop GUI applications (CalculaPy).</p>
+                        <p class="lib-name">Tkinter / BetterTkinter</p>
+                        <p data-i18n="lib.tk">Desktop GUI applications.</p>
                     </div>
                 </div>
             </div>
@@ -364,39 +377,37 @@
         <!-- ============ CONTACT ============ -->
         <section id="contact" class="section">
             <div class="contact">
-                <div>
-                    <p class="eyebrow mono">04 /</p>
-                    <h2 data-i18n="contact.title">Let's talk</h2>
-                    <p class="section-sub" data-i18n="contact.sub">A project, a bot, a peering on DN42? Reach out!</p>
-                </div>
-                <div class="contact-links">
-                    <a href="mailto:hugo.hennetin@proton.me" class="contact-item">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                        <span>Email</span>
-                    </a>
-                    <a href="https://discord.gg/ESzHqadj5J" class="contact-item" target="_blank" rel="noopener">
-                        <span class="mono-logo logo-discord" style="--brand:currentColor"></span>
-                        <span>Discord · @zerbaib</span>
-                    </a>
-                    <a href="https://github.com/Zerbaib" class="contact-item" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://twitter.com/zerbaib" class="contact-item" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                        <span>X / Twitter</span>
-                    </a>
+                <div class="win-bar"><i></i><i></i><i></i><span>./contact.sh</span></div>
+                <div class="contact-inner">
+                    <div>
+                        <p class="prompt"><span class="pu">zerbaib@portfolio</span>:<span class="pp">~</span>$ <span class="pc">./contact.sh</span></p>
+                        <h2 data-i18n="contact.title">Let's talk</h2>
+                        <p class="section-sub" data-i18n="contact.sub">A project, a bot, a peering on DN42? Reach out!</p>
+                    </div>
+                    <div class="contact-links">
+                        <a href="mailto:me@zerbaib.fr" class="contact-item">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <span>me@zerbaib.fr</span>
+                        </a>
+                        <a href="https://discord.gg/ESzHqadj5J" class="contact-item" target="_blank" rel="noopener">
+                            <span class="mono-logo logo-discord" style="--brand:currentColor"></span>
+                            <span>Discord · @zerbaib</span>
+                        </a>
+                        <a href="https://github.com/Zerbaib" class="contact-item" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                            <span>github.com/Zerbaib</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <p class="discord-id mono">Discord ID · 701805250524217394</p>
+            <p class="discord-id">Discord ID · 701805250524217394</p>
         </section>
     </main>
 
-    <!-- Start: CleanFooter -->
     <footer class="footer">
         <strong>Made with&nbsp;❤️ by Zerbaib | © 2026</strong>
         <em data-i18n="footer.legal">This website is hosted on GitHub Pages, and it respects EU and American law.</em>
-    </footer><!-- End: CleanFooter -->
+    </footer>
 
     <script src="assets/js/main.js"></script>
 </body>
