@@ -353,6 +353,8 @@ a.box:hover .box-title::before, a.box:hover .box-title::after { color: var(--acc
 /* Other projects */
 .grid { display: grid; gap: 22px; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.feature-shot { width: 100%; border: 1px solid var(--border); display: block; }
 .card { margin-top: 18px; }
 .card p { font-size: 13.5px; color: var(--muted); }
 .card .card-meta { margin: 10px 0 4px; }
@@ -531,7 +533,7 @@ a.box:hover .box-title::before, a.box:hover .box-title::after { color: var(--acc
   .nf-logo { width: 140px; }
   .nf-info p { white-space: normal; }
   .box { padding: 22px 14px 16px; }
-  .grid-3 { grid-template-columns: 1fr; }
+  .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .unit { grid-template-columns: 1.5ch 28px 1fr; row-gap: 2px; }
   .unit-desc { grid-column: 3; }
   .pip-row { grid-template-columns: 1fr; gap: 0; padding: 7px 6px; }

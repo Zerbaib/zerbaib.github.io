@@ -40,7 +40,12 @@
 
         'other.cdb': 'L’ancêtre de TheDiscordBot : mon premier bot Discord tout-en-un en Python avec disnake (modération, classement, économie…).',
         'other.legacy': 'ancêtre',
-        'other.mk8': 'Classement communautaire des contre-la-montre de Mario Kart 8 Deluxe : classements et records en 150cc et 200cc sur les 96 circuits, chaque temps étant vérifié par des modérateurs.',
+        'mk8.desc': 'Un classement communautaire des contre-la-montre de Mario Kart 8 Deluxe, avec les records du monde et les classements en 150cc et 200cc sur les 96 circuits.',
+        'mk8.f1': 'Les joueurs soumettent leurs meilleurs temps, chacun est vérifié par des modérateurs',
+        'mk8.f2': 'Classements par circuit, joueur, pays et région',
+        'mk8.f3': 'Système de points pour classer les joueurs sur l’ensemble des circuits',
+        'mk8.f4': 'Comptes joueurs et une communauté Discord',
+        'common.visit': 'Voir le site',
         'other.live': 'en ligne',
         'other.lg': 'Association loi 1901 fondée par quatre étudiants en informatique pour rendre l’informatique simple et accessible.',
 
