@@ -209,6 +209,7 @@ main { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
 .tag::before { content: "#"; }
 .tag-accent { color: var(--accent); }
 .tag-warn { color: var(--warn); }
+.tag-ok { color: var(--accent); }
 
 /* ==========================================================
    Neofetch hero

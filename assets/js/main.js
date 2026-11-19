@@ -40,7 +40,8 @@
 
         'other.cdb': 'L’ancêtre de TheDiscordBot : mon premier bot Discord tout-en-un en Python avec disnake (modération, classement, économie…).',
         'other.legacy': 'ancêtre',
-        'other.atl': 'Quatre feux tricolores entièrement automatiques réalisés avec Arduino pour un projet scolaire.',
+        'other.mk8': 'Classement communautaire des contre-la-montre de Mario Kart 8 Deluxe : classements et records en 150cc et 200cc sur les 96 circuits, chaque temps étant vérifié par des modérateurs.',
+        'other.live': 'en ligne',
         'other.lg': 'Association loi 1901 fondée par quatre étudiants en informatique pour rendre l’informatique simple et accessible.',
 
         'network.title': 'Réseau &amp; serveurs',
